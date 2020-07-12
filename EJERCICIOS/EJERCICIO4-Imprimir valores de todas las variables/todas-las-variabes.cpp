@@ -3,10 +3,14 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    bool valorBoolean;
-
-    valorBoolean;
-    valorBoolean= false;
+    // DECLARACIONES DE VARIABLES
+    // int para declarar varibales enteras
+    // double para declarar variables numeros reales
+    // string para delcarar cadena de caracteres
+    // char para declara un caracter
+    // bool para delcarar 
+    
+    bool valorBoolean= false;
     int valorEntero=15;
     double valorDouble=20.99;
     string valorString= "Hola Como Estan";
