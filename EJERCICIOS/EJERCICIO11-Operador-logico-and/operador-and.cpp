@@ -7,6 +7,9 @@ int main(int argc, char const *argv[])
     int b=10;
     int c=7;
 
+
+//&& A(MPERSON)
+
     if (a > b && a > c)
     {
         cout << "A es el mayor   " << a;
