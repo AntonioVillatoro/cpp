@@ -64,8 +64,9 @@ int main() {
  
 
     }else {
-        if (contrasena == "neo")
         system("COLOR 04");
+        if (contrasena == "neo")
+        
         {
             
             for (int i = 1; i <= 10; i++)
@@ -80,7 +81,7 @@ int main() {
         }
         
     }
-        if (contrasena != "smith" || contrasena != "neo")
+       
         {
             cout << endl;
             cout << "acceso a la matrix denegado";
