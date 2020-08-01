@@ -6,10 +6,40 @@ int sumar (int a, int b)
     return a+b;
 }
 
+int restar (int a, int b)
+{
+    return a-b;
+}
+
+int multiplicar (int a, int b)
+{
+    return a*b;
+}
+
+int dividir (int a, int b)
+{
+    return a/b;
+}
+
+
 int calculadora (int a, int b, char operador){
-    if (operador== '+'){
-        return sumar (a, b);
-    }
+switch (operador)
+{
+case '+':
+    return sumar (a, b);
+    break;
+case '-':
+    return restar (a, b);
+    break;
+case '*':
+    return multiplicar (a, b);
+    break;
+case '/':
+    return dividir (a, b);
+    break;
+default:
+    break;
+}
     throw "EL OPERADOR NO EXISTE";
 
 }
@@ -35,9 +65,10 @@ int main(int argc, char const *argv[])
 try
 {
 resultado = calculadora (num1, num2, operador);
-cout << "RESULTADO DE " << num1 << " " << operador << " " << num2 << "ES: ";
-cout << resultado;
+cout << "RESULTADO DE " << num1 << " " << operador << " " << num2 << "  ES :  " << resultado;
+cout << endl << endl;
 }
+
 catch(const char* error)
 {
     cout << error;
