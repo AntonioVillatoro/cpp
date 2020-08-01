@@ -18,6 +18,10 @@ int multiplicar (int a, int b)
 
 int dividir (int a, int b)
 {
+    if (b==0){
+        throw "NO SE PUEDE DIVIDIR ENTRE 0    ";
+        cout << endl << endl;
+    }
     return a/b;
 }
 
