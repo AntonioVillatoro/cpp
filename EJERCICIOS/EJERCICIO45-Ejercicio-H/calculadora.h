@@ -1,3 +1,3 @@
 
 
-int sumar (int a, int b);
+int calcular (int a, int b, char operador);
