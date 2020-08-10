@@ -3,7 +3,7 @@
 using namespace std;
 
 int numero=0;
-int raiz=0;
+double raiz=0;
 
 
 int main(int argc, char const *argv[])
