@@ -21,7 +21,7 @@ for (int i = 0; i < 5; i++)
     {
         
         numeros [i][j]= rand ()%10+1;
-        cout << "[" << numeros [i][j] << "]" << "  ";
+        cout << " [" << numeros [i][j] << "] " << "\t";
         sumaTotal=sumaTotal + numeros [i][j];
     }
     
