@@ -14,13 +14,16 @@ int main(int argc, char const *argv[])
         system("cls");
         cout << "***********" << endl;
         cout << " BIENVENIDO " << endl;
-        cout << "***********" << endl << endl;
+        cout << "***********" << endl
+             << endl;
         cout << "***************" << endl;
         cout << " MENU DE JUEGO " << endl;
-         cout << "**************" << endl << endl;
+        cout << "**************" << endl
+             << endl;
         cout << "SELECCIONE UN JUEGO: " << endl;
         cout << "1- STARSHIP" << endl;
         cout << "2-SNAKE" << endl;
+        cout << "0-SALIR" << endl;
         cout << "INGRESE LA OPCION PARA JUGAR:" << endl;
         cin >> opcion;
 
@@ -37,7 +40,18 @@ int main(int argc, char const *argv[])
         default:
             break;
         }
-    }
 
-    return 0;
+        if (opcion==0)
+        {
+            break;
+        } else
+        {
+            cout << "INGRESE UNA OPCION VALIDA" << endl << endl;
+        }
+        
+        
+
+
+        return 0;
+    }
 }
