@@ -25,9 +25,15 @@ int main(int argc, char const *argv[])
         cout << "INGRESE LA OPCION PARA JUGAR:" << endl;
         cin >> opcion;
 
+        if (opcion >= 3)
+        {
+            cout << "ERROR! INGRESE UNA OPCION VALIDA:  0 - 1 - 2 :  ";
+            cin >> opcion;
+        }
+
         if (opcion == 0)
         {
-            break;
+        break;
         }
 
         switch (opcion)
@@ -41,26 +47,7 @@ int main(int argc, char const *argv[])
             snake();
             break;
         default:
-        {
-            cout << "ERROR! INGRESE UNA OPCION VALIDA:  ";
-            cin >> opcion;
-
-            if (opcion == 1)
-            {
-                system("cls");
-                starShip();
-                break;
-            }
-            else
-            {
-                if (opcion == 2)
-                {
-                    system("cls");
-                    snake();
-                    break;
-                }
-            }
-        }
+        break;
 
             return 0;
         }
