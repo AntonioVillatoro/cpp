@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
             break;
         default:
         {
-            cout << "Error! Ingrese una opcion valida entre 0-2: ";
+            cout << "ERROR! INGRESE UNA OPCION VALIDA:  ";
             cin >> opcion;
 
             if (opcion == 1)
