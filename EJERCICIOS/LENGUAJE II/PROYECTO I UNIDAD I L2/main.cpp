@@ -14,18 +14,21 @@ int main(int argc, char const *argv[])
         system("cls");
         cout << "***********" << endl;
         cout << " BIENVENIDO " << endl;
-        cout << "***********" << endl
-             << endl;
+        cout << "***********" << endl;
         cout << "***************" << endl;
         cout << " MENU DE JUEGO " << endl;
-        cout << "**************" << endl
-             << endl;
+        cout << "**************" << endl;
         cout << "SELECCIONE UN JUEGO: " << endl;
         cout << "1- STARSHIP" << endl;
         cout << "2-SNAKE" << endl;
         cout << "0-SALIR" << endl;
         cout << "INGRESE LA OPCION PARA JUGAR:" << endl;
         cin >> opcion;
+
+        if (opcion == 0)
+        {
+            break;
+        }
 
         switch (opcion)
         {
@@ -38,20 +41,28 @@ int main(int argc, char const *argv[])
             snake();
             break;
         default:
-            break;
+        {
+            cout << "Error! Ingrese una opcion valida entre 0-2: ";
+            cin >> opcion;
+
+            if (opcion == 1)
+            {
+                system("cls");
+                starShip();
+                break;
+            }
+            else
+            {
+                if (opcion == 2)
+                {
+                    system("cls");
+                    snake();
+                    break;
+                }
+            }
         }
 
-        if (opcion==0)
-        {
-            break;
-        } else
-        {
-            cout << "INGRESE UNA OPCION VALIDA" << endl << endl;
+            return 0;
         }
-        
-        
-
-
-        return 0;
     }
 }
